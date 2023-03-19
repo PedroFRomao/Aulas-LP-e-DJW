@@ -19,34 +19,69 @@ inicio
       Leia(voto)
       Se(voto=1) entao
          c1:= c1+1
+         Escreval("voto confirmado")
+         i:= (i+1)
       Senao
          Se(voto=2) entao
             c2:= c2+1
+            Escreval("voto confirmado")
+            i:= (i+1)
          Senao
             Se (voto=3) entao
                c3:= c3+1
+               Escreval("voto confirmado")
+               i:= (i+1)
             Senao
-               Escreva("ERROR")
+               Escreval("ERROR")
             Fimse
          Fimse
       Fimse
-      i:= (i+1)
-      Escreval("voto confirmado")
       Escreval("Deseja terminar a votacao: (s ou n)")
       leia (fim)
    fimenquanto
-   Se c1>c2 e c1>c3 entao
-         Escreval("A maria foi a vencedora com ", c1,"pontos")
-      Senao
-         Se(c2>c1) e (c2>c3 entao
-            Escreval("O joao foi a vencedora com ", c2,"pontos")
+   Se (c1>c2) e (c1>c3)entao
+         Escreval("A Maria foi a vencedora com ", c1," ponto(s)")
+         Escreval("Ela conquistou ", c1*100/i ,"% dos votos")
+         Se c2>c3 entao
+            Escreval("Ela ganhou com uma diferenca de ", c1-c2 ," votos de Joao")
          Senao
-            Se(c3>c1) e (c3>c2 entao
-               Escreval("O Jose foi a vencedora com ", c3,"pontos")
+            Escreval("Ela ganhou com uma diferenca de ", c1-c3 ," votos de Jose")
+         Fimse
+   Senao
+         Se(c2>c1) e (c2>c3) entao
+            Escreval("O Joao foi a vencedor com ", c2," ponto(s)")
+            Escreval("Ele conquistou ", c2*100/i ,"% dos votos")
+            Se c1>c3 entao
+               Escreval("Ele ganhou com uma diferenca de ", c2-c1 ," votos de Maria")
             Senao
-               Escreva("ouve um empate entre dois candidatos")
+               Escreval("Ele ganhou com uma diferenca de ", c2-c3 ," votos de Jose")
+            Fimse
+         Senao
+            Se(c3>c1) e (c3>c2) entao
+               Escreval("O Jose foi a vencedor com ", c3," ponto(s)")
+               Escreval("Ele conquistou ", c3*100/i ,"% dos votos")
+               Se c2>c1 entao
+                  Escreval("Ele ganhou com uma diferenca de ", c3-c1 ," votos de Maria")
+               Senao
+                  Escreval("Ele ganhou com uma diferenca de ", c3-c2 ," votos de Joao")
+               Fimse
+            Senao
+               Escreval("ouve um empate entre dois candidatos")
+               Se (c1=c2) entao
+                  Escreval("Os candidatos Maria e Joao empataram com ", c1," votos")
+               Senao
+                  Se (c1=c3) entao
+                     Escreval("Os candidatos Maria e Jose empataram com ", c1," votos")
+                  Senao
+                     Se (c2=c3) entao
+                        Escreval("Os candidatos Jose e Joao empataram com ", c2," votos")
+                     Senao
+                     Fimse
+                  Fimse
+               Fimse
             Fimse
          Fimse
-      Fimse
+
+   Fimse
 // Seção de Comandos 
 fimalgoritmo
