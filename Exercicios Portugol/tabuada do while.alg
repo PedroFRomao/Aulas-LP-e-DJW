@@ -12,7 +12,7 @@ Inicio
    i:=1
    repita
     con:= num*i
-    Escreval (num, "*", i, "=", con)
+    Escreval (num, " * ", i, " = ", con)
     i:=i+1
    ate i > 10
 

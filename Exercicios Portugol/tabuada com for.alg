@@ -7,11 +7,12 @@ var
 num,i, j,con:inteiro
 // Seção de Comandos
 Inicio
+i:=1
    Escreva("Digite qual número quer multiplicar")
    leia(num)
    para i de 1 ate 10 faca
     con:= num*i
-    Escreval (num, "*", i, "=", con)
+    Escreval (num, " * ", i, " = ", con)
     i:=i+1
    fimpara
 fimalgoritmo

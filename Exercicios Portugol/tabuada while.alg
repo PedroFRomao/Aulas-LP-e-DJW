@@ -12,7 +12,7 @@ Inicio
    i:=1
    enquanto (i<=10) faca
     con:= num*i
-    Escreval (num, "*", i, "=", con)
+    Escreval (num, " *", i, " =", con)
     i:= i+1
   fimenquanto
 fimalgoritmo
