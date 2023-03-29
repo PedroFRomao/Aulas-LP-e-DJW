@@ -1,8 +1,8 @@
-algoritmo "semnome"
-// Função :
+algoritmo "Votacao"
+// Fun??o :
 // Autor :
 // Data : 15/03/2023
-// Seção de Declarações
+// Se??o de Declara??es
 var
    i, c1, c2, c3, voto:inteiro
    fim:caracter
@@ -13,6 +13,7 @@ inicio
    i:=0
    fim:="n"
    enquanto (fim = "n") faca
+      //votao
       Escreval("Digite 1 para votar em maria")
       Escreval("Digite 2 para votar em joao")
       Escreval("Digite 3 para votar em jose")
@@ -36,46 +37,72 @@ inicio
             Fimse
          Fimse
       Fimse
+      //fim votacao
       Escreval("Deseja terminar a votacao: (s ou n)")
       leia (fim)
    fimenquanto
+   //maria vence
    Se (c1>c2) e (c1>c3)entao
          Escreval("A Maria foi a vencedora com ", c1," ponto(s)")
          Escreval("Ela conquistou ", c1*100/i ,"% dos votos")
-         Se c2>c3 entao
-            Escreval("Ela ganhou com uma diferenca de ", c1-c2 ," votos de Joao")
+         //caso ela seja invicta
+         Se (c2 + c3 = 0) entao
+            Escreval("Ela ganhou invcta")
          Senao
-            Escreval("Ela ganhou com uma diferenca de ", c1-c3 ," votos de Jose")
+            //teste
+            Se (c2 > c3) entao
+               Escreval("Ela ganhou com uma diferenca de ", c1-c2 ," votos de Joao")
+            Senao
+               Escreval("Ela ganhou com uma diferenca de ", c1-c3 ," votos de Jose")
+            Fimse
          Fimse
    Senao
-         Se(c2>c1) e (c2>c3) entao
+         //joao vence
+         Se(c2 > c1) e (c2 > c3) entao
             Escreval("O Joao foi a vencedor com ", c2," ponto(s)")
             Escreval("Ele conquistou ", c2*100/i ,"% dos votos")
-            Se c1>c3 entao
-               Escreval("Ele ganhou com uma diferenca de ", c2-c1 ," votos de Maria")
+            //caso ela seja invicta
+            Se (c2 + c3 = 0) entao
+               Escreval("Ele ganhou invcto")
             Senao
-               Escreval("Ele ganhou com uma diferenca de ", c2-c3 ," votos de Jose")
+               //teste
+               Se (c1 > c3) entao
+                  Escreval("Ele ganhou com uma diferenca de ", c2-c1 ," votos de Maria")
+               Senao
+                  Escreval("Ele ganhou com uma diferenca de ", c2-c3 ," votos de Jose")
+               Fimse
             Fimse
          Senao
-            Se(c3>c1) e (c3>c2) entao
+            // jose vence
+            Se(c3 > c1) e (c3 > c2) entao
                Escreval("O Jose foi a vencedor com ", c3," ponto(s)")
                Escreval("Ele conquistou ", c3*100/i ,"% dos votos")
-               Se c2>c1 entao
-                  Escreval("Ele ganhou com uma diferenca de ", c3-c1 ," votos de Maria")
+               //caso ela seja invicta
+               Se (c2 + c3 = 0) entao
+                  Escreval("Ele ganhou invcto")
                Senao
-                  Escreval("Ele ganhou com uma diferenca de ", c3-c2 ," votos de Joao")
-               Fimse
-            Senao
-               Escreval("ouve um empate entre dois candidatos")
-               Se (c1=c2) entao
-                  Escreval("Os candidatos Maria e Joao empataram com ", c1," votos")
-               Senao
-                  Se (c1=c3) entao
-                     Escreval("Os candidatos Maria e Jose empataram com ", c1," votos")
+                  //teste
+                  Se (c2 > c1) entao
+                     Escreval("Ele ganhou com uma diferenca de ", c3-c1 ," votos de Maria")
                   Senao
-                     Se (c2=c3) entao
-                        Escreval("Os candidatos Jose e Joao empataram com ", c2," votos")
+                     Escreval("Ele ganhou com uma diferenca de ", c3-c2 ," votos de Joao")
+                  Fimse
+               Fimse
+               //EMPATE
+               Escreval("Ouve um empate entre dois candidatos")
+               //Maria e Joao
+               Se (c1 = c2) entao
+                  Escreval("Os candidatos Maria e Joao empataram com", c1," voto(s)")
+               Senao
+                  //Maria e Jose
+                  Se (c1 = c3) entao
+                     Escreval("Os candidatos Maria e Jose empataram com", c1," voto(s)")
+                  Senao
+                     //Jose e Joao
+                     Se (c2 = c3) entao
+                        Escreval("Os candidatos Jose e Joao empataram com", c2," voto(s)")
                      Senao
+                        Escreval("ERROR")
                      Fimse
                   Fimse
                Fimse
@@ -83,5 +110,4 @@ inicio
          Fimse
 
    Fimse
-// Seção de Comandos
 fimalgoritmo
