@@ -46,5 +46,12 @@ namespace PedroFerrazeRuanPablo
             frm_Loops fm = new frm_Loops();
             fm.Show();
         }
+
+        private void eleiçãoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            frm_Votacao fm = new frm_Votacao();
+            fm.Show();
+        }
     }
 }

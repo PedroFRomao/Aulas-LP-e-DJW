@@ -64,6 +64,12 @@
     <Compile Include="frm_Posto.Designer.cs">
       <DependentUpon>frm_Posto.cs</DependentUpon>
     </Compile>
+    <Compile Include="frm_Votacao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Votacao.Designer.cs">
+      <DependentUpon>frm_Votacao.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="frmmenu.resx">
@@ -74,6 +80,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frm_Posto.resx">
       <DependentUpon>frm_Posto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Votacao.resx">
+      <DependentUpon>frm_Votacao.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
