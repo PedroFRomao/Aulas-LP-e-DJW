@@ -25,3 +25,4 @@ C:\Users\pedro\Documents\.Estudos\Aulas-de-LP\Exercicios C#\PedroFerrazeRuanPabl
 C:\Users\pedro\Documents\.Estudos\Aulas-de-LP\Exercicios C#\PedroFerrazeRuanPablo\PedroFerrazeRuanPablo\obj\Debug\PedroFerrazeRuanPablo.csproj.CoreCompileInputs.cache
 C:\Users\pedro\Documents\.Estudos\Aulas-de-LP\Exercicios C#\PedroFerrazeRuanPablo\PedroFerrazeRuanPablo\obj\Debug\PedroFerrazeRuanPablo.exe
 C:\Users\pedro\Documents\.Estudos\Aulas-de-LP\Exercicios C#\PedroFerrazeRuanPablo\PedroFerrazeRuanPablo\obj\Debug\PedroFerrazeRuanPablo.pdb
+C:\Users\pedro\Documents\.Estudos\Aulas-de-LP\Exercicios C#\PedroFerrazeRuanPablo\PedroFerrazeRuanPablo\obj\Debug\PedroFerrazeRuanPablo.frm_votacao2.resources

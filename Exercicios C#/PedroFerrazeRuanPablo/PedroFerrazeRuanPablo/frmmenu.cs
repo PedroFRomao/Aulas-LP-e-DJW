@@ -50,7 +50,7 @@ namespace PedroFerrazeRuanPablo
         private void eleiçãoToolStripMenuItem_Click(object sender, EventArgs e)
         {
             this.Hide();
-            frm_Votacao fm = new frm_Votacao();
+            frm_votacao fm = new frm_votacao();
             fm.Show();
         }
     }

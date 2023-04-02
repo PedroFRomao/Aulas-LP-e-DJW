@@ -4,59 +4,20 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
-using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace PedroFerrazeRuanPablo
 {
-    public partial class frm_Votacao : Form
+    public partial class frm_votacao : Form
     {
-        public frm_Votacao()
+        public frm_votacao()
         {
             InitializeComponent();
         }
 
-        private void btnlimpar_Click(object sender, EventArgs e)
-        {
-            txtbox1.Clear();
-
-            txtbox1.Focus();
-        }
-
-        private void frm_Votacao_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void lbl3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void lbl4_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void txtbox4_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void lbl2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button1_Click(object sender, EventArgs e)
+        private void btnvotar_Click(object sender, EventArgs e)
         {
             double voto, c1, c2, c3, i;
             voto = Convert.ToDouble(txtbox1.Text);
@@ -100,7 +61,14 @@ namespace PedroFerrazeRuanPablo
 
                     }
                 }
-            }          
+            }
+        }
+
+        private void btnlimpar_Click(object sender, EventArgs e)
+        {
+            txtbox1.Clear();
+
+            txtbox1.Focus();
         }
 
         private void btnvoltar_Click(object sender, EventArgs e)
@@ -112,12 +80,9 @@ namespace PedroFerrazeRuanPablo
 
         private void btncalcular_Click(object sender, EventArgs e)
         {
-            double voto, c1, c2, c3, i;
-
             lbl5.Visible = true;
             lbl6.Visible = true;
             lbl7.Visible = true;
-
         }
     }
 }

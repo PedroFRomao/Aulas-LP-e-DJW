@@ -55,10 +55,15 @@ namespace PedroFerrazeRuanPablo
                 txtbox2.Text = res.ToString();
                 i = i + 1;
             }
-                
-            
+        }
 
+        private void btncalcular3_Click(object sender, EventArgs e)
+        {
 
+        }
+
+        private void btncalcular2_Click(object sender, EventArgs e)
+        {
 
         }
     }
