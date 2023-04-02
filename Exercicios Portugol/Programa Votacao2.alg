@@ -62,7 +62,7 @@ inicio
             Escreval("O Joao foi a vencedor com ", c2," ponto(s)")
             Escreval("Ele conquistou ", c2*100/i ,"% dos votos")
             //caso ela seja invicta
-            Se (c2 + c3 = 0) entao
+            Se (c1 + c3 = 0) entao
                Escreval("Ele ganhou invcto")
             Senao
                //teste
@@ -78,14 +78,14 @@ inicio
                Escreval("O Jose foi a vencedor com ", c3," ponto(s)")
                Escreval("Ele conquistou ", c3*100/i ,"% dos votos")
                //caso ela seja invicta
-               Se (c2 + c3 = 0) entao
+               Se (c1 + c2 = 0) entao
                   Escreval("Ele ganhou invcto")
                Senao
                   //teste
                   Se (c2 > c1) entao
-                     Escreval("Ele ganhou com uma diferenca de ", c3-c1 ," votos de Maria")
-                  Senao
                      Escreval("Ele ganhou com uma diferenca de ", c3-c2 ," votos de Joao")
+                  Senao
+                     Escreval("Ele ganhou com uma diferenca de ", c3-c1 ," votos de Maria")
                   Fimse
                Fimse
                //EMPATE

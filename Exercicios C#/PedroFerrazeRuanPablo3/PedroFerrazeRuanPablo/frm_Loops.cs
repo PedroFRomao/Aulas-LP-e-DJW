@@ -40,7 +40,7 @@ namespace PedroFerrazeRuanPablo
             while (i <= 10)
             {
                 res = (i * num);
-                txtbox2.Text = res.ToString();
+                txtbox2.AppendText($"{num} * {i} = {res}\r\n");
                 i++;
             }
             txtbox1.Clear();
@@ -55,7 +55,7 @@ namespace PedroFerrazeRuanPablo
             do
             {
                 res = (i * num);
-                txtbox3.Text = res.ToString();
+                txtbox3.AppendText($"{num} * {i} = {res}\r\n");
                 i++;
             } while (i <= 10);
             txtbox1.Clear();
@@ -75,6 +75,7 @@ namespace PedroFerrazeRuanPablo
             txtbox1.Focus();
         }
 
+
         private void btnlimpar_Click(object sender, EventArgs e)
         {
             txtbox1.Clear();
@@ -83,6 +84,11 @@ namespace PedroFerrazeRuanPablo
             txtbox4.Clear();
 
             txtbox1.Focus();
+        }
+
+        private void label8_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
