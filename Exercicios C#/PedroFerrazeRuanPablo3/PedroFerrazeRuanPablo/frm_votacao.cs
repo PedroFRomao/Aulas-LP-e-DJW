@@ -62,8 +62,6 @@ namespace PedroFerrazeRuanPablo
                     }
                 }
             }
-            txtbox1.Clear();
-            txtbox1.Focus();
         }
 
         private void btncalcular_Click(object sender, EventArgs e)

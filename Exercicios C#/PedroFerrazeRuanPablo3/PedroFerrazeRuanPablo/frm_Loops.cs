@@ -25,11 +25,6 @@ namespace PedroFerrazeRuanPablo
 
         }
 
-        private void lbl1_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void btnvoltar_Click(object sender, EventArgs e)
         {
             this.Hide();
@@ -37,22 +32,13 @@ namespace PedroFerrazeRuanPablo
             fm.Show();
         }
 
-        private void btnlimpar_Click(object sender, EventArgs e)
-        {
-            txtbox1.Clear();
-            txtbox2.Clear();
-            txtbox3.Clear();
-            txtbox4.Clear();
-
-            txtbox1.Focus();
-        }
-
         private void btncalcular_Click(object sender, EventArgs e)
         {
             int num, i, res;
             i = 1;
             num = Convert.ToInt32(txtbox1.Text);
-            while (i <= 10){
+            while (i <= 10)
+            {
                 res = (i * num);
                 txtbox2.Text = res.ToString();
                 i++;
@@ -66,7 +52,8 @@ namespace PedroFerrazeRuanPablo
             int num, i, res;
             i = 1;
             num = Convert.ToInt32(txtbox1.Text);
-            do{
+            do
+            {
                 res = (i * num);
                 txtbox3.Text = res.ToString();
                 i++;
@@ -79,11 +66,22 @@ namespace PedroFerrazeRuanPablo
         {
             int num, i, res;
             num = Convert.ToInt32(txtbox1.Text);
-            for (i = 1; i <= 10; i++){
+            for (i = 1; i <= 10; i++)
+            {
                 res = (i * num);
                 txtbox4.AppendText($"{num} * {i} = {res}\r\n");
             }
             txtbox1.Clear();
+            txtbox1.Focus();
+        }
+
+        private void btnlimpar_Click(object sender, EventArgs e)
+        {
+            txtbox1.Clear();
+            txtbox2.Clear();
+            txtbox3.Clear();
+            txtbox4.Clear();
+
             txtbox1.Focus();
         }
     }
