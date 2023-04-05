@@ -16,12 +16,12 @@
 <li><h3>Tabuada com While</h3></li>
 
 <p Align="justify">Para fazer a tabuada Com While, comecei criando e depois sentando as variáveis “num”, “i”, “con”  como inteiras. Para começar setei a variável “i” como  “1” já que ela iria representar quantas vezes o loop aconteceu. Coloquei um escreval perguntando qual o número o usuário gostaria de multiplicar, e li a variável “num” e comecei o loop que duraria até “i” ser igual ou menor que 10. Nele a variável “con” era igual a variável “num” multiplicado pela variável “i” e mostrei para o usuário o valor de “con” e adicionei mais 1 para a variável i para o loop acabar.</p>
-</ul>
+
 
 <li><h3>Tabuada com Do While</h3></li>
 
 <p Align="justify">Para fazer a tabuada Com Do While, comecei criando e depois sentando as variáveis “num”, “i”, “con”  como inteiras. Para começar setei a variável “i” como  “1” já que ela iria representar quantas vezes o loop aconteceu. Coloquei um escreval perguntando qual o número o usuário gostaria de multiplicar, e li a variável “num” e comecei o loop que repetirá tudo que contiver. Nele a variável “con” era igual a variável “num” multiplicado pela variável “i” e mostrei para o usuário o valor de “con” e adicionei mais 1 para a variável, depois setei que o loop se repetiria até “i” ser maior que 10.</p>
-</ul>
+
 
 <li><h3>Tabuada com For</h3></li>
 
