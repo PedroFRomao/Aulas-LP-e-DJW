@@ -4,12 +4,12 @@ algoritmo "Tabuada com do While"
 // Data : 08/03/2023
 // Seção de Declarações 
 var
-num,i, j,con:inteiro
+num,i,con:inteiro
 // Seção de Comandos
 Inicio
+   i:=1
    Escreva("Digite qual número quer multiplicar")
    leia(num)
-   i:=1
    repita
     con:= num*i
     Escreval (num, " * ", i, " = ", con)

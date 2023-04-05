@@ -1,10 +1,10 @@
-algoritmo "Tabuada com do While"
+algoritmo "Tabuada com For"
 // Função :
 // Autor :
 // Data : 08/03/2023
 // Seção de Declarações 
 var
-num,i, j,con:inteiro
+num,i,con:inteiro
 // Seção de Comandos
 Inicio
 i:=1

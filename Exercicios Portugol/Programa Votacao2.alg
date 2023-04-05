@@ -88,6 +88,7 @@ inicio
                      Escreval("Ele ganhou com uma diferenca de ", c3-c1 ," votos de Maria")
                   Fimse
                Fimse
+            Senao
                //EMPATE
                Escreval("Ouve um empate entre dois candidatos")
                //Maria e Joao
