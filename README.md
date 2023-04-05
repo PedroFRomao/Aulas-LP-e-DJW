@@ -34,13 +34,13 @@
 <ul>
 <li><h3>Posto</h3></li>
 
-<p Align="justify">texto.</p>
+<p Align="justify">Para fazer o exercício do posto, comecei criando duas textboxes que leem as variáveis  “quant” e “comb”, depois disso criei mais duas que mostram o valor de “des” e o valor de “pag”, um botão para calcular, um de voltar para o form do menu e um para limpar as textbox. Para começar, setei as variáveis “quant”, “des” e  “pag” como double e a variável “comb” como char, converti as variáveis “quant” to double da textbox para texto e a “comb” to char da textbox para texto, o código ficou a mesma coisa que no portugues estruturado, a unica diferença que no final do código o resultado foi mostrado por meio de uma textbox.</p>
 
 <li><h3>Eleição</h3></li>
 
-<p Align="justify">texto.</p>
+<p Align="justify">Para fazer o exercício da eleição, decidi fazer um pouco diferente e não usar textboxes para mostrar os resultados, então comecei criando apenas uma textbox que lê a variável “voto” e um botão que salva os votos e um outro botão para terminar a votação e mostrar o ganhador, um outro botão que volta para o form do menu e um para limpar as textbox. E para mostrar o ganhador coloquei 3 labels que são alterados para mostrar o candidato quantos votos ele conquistou, a porcentagem de votos que ele conseguiu em relação ao total e se caso ele houver um empate também mostrará o nome dos candidatos e a quantidade de votos que eles conquistaram.</p>
 
 <li><h3>Loops</h3></li>
 
-<p Align="justify">texto.</p>
+<p Align="justify">Para fazer o exercício dos loops, comecei criando quatro textboxes, a primeira serve para ler a variável “num”, as outras três mostram as tabuadas. Para calcular as tabuadas, criei 3 botões, cada um controla uma textbox com um tipo de loop diferente, um outro botão que volta para o form do menu e um para limpar as textbox. O código ficou a mesma coisa que no portugues estruturado, a única diferença é que no final do código o resultado foi mostrado por meio de uma textbox e para conseguir que ela mostrasse os resultados um embaixo do outro, tive que marcar a caixa da multiline e ao interpolar a texto mostrado na textbox também tive que colocar “\r\n” no final para o c# fazer uma quebra de linha.</p>
 </ul>

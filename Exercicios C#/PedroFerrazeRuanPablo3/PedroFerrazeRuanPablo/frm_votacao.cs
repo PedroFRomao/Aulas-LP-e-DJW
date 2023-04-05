@@ -102,6 +102,12 @@ namespace PedroFerrazeRuanPablo
             int c3 = GlobalVariables.c3;
             int i = GlobalVariables.i;
 
+            lbl5.Visible = true;
+            lbl6.Visible = true;
+            lbl7.Visible = true;
+
+            txtbox1.Enabled = false;
+
             if ((c1 > c2) && (c1 > c3))
             {
                 lbl5.Text = $"A Maria foi a vencedora com {c1} ponto(s)";
@@ -191,12 +197,14 @@ namespace PedroFerrazeRuanPablo
                                 }
                             }
                         }
+                        lbl7.Visible = false;
+
                     }
                 }
+
             }
-            lbl5.Visible = true;
-            lbl6.Visible = true;
-            lbl7.Visible = true;
+
+
         }
 
         private void btnvoltar_Click(object sender, EventArgs e)
@@ -215,6 +223,11 @@ namespace PedroFerrazeRuanPablo
             GlobalVariables.i = 0;
 
             txtbox1.Focus();
+        }
+
+        private void lbl7_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

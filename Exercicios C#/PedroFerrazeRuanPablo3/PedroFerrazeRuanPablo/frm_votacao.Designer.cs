@@ -47,10 +47,13 @@
             this.lbl7.AutoSize = true;
             this.lbl7.Location = new System.Drawing.Point(237, 281);
             this.lbl7.Name = "lbl7";
+            this.lbl7.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.lbl7.Size = new System.Drawing.Size(330, 13);
             this.lbl7.TabIndex = 62;
             this.lbl7.Text = "Ele ganhou com uma diferença de NUMERO votos de CANDIDATO";
+            this.lbl7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.lbl7.Visible = false;
+            this.lbl7.Click += new System.EventHandler(this.lbl7_Click);
             // 
             // btnvotar
             // 
@@ -88,6 +91,7 @@
             this.lbl6.Size = new System.Drawing.Size(168, 13);
             this.lbl6.TabIndex = 58;
             this.lbl6.Text = "Conquistou NUMERO% dos votos";
+            this.lbl6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.lbl6.Visible = false;
             // 
             // lbl5
@@ -98,6 +102,7 @@
             this.lbl5.Size = new System.Drawing.Size(266, 13);
             this.lbl5.TabIndex = 57;
             this.lbl5.Text = "O ganhador da votação foi CANDIDATO com VOTOS ";
+            this.lbl5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.lbl5.Visible = false;
             // 
             // lbl4
